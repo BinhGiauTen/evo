@@ -1,0 +1,932 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hàng mới về</title>
+    <link rel="shortcut icon" href="../assets/img/logo.png">
+    <link rel="stylesheet" href="../assets/fonts/fontawesome-free-6.3.0-web/css/all.css">
+    <link rel="stylesheet" href="../assets/css/base.css">
+    <link rel="stylesheet" href="../assets/css/main.css">
+    <link rel="stylesheet" href="../assets/css/grid.css">
+    <link rel="stylesheet" href="../assets/css/responsive.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css"
+        integrity="sha512-17EgCFERpgZKcm0j0fEq1YCJuyAWdz9KUtv1EjVuaOz8pDnh/0nZxmU6BBXwaaxqoi9PQXnRWqlcDB027hgv9A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css"
+        integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        .slick-prev::before,
+        .slick-next::before {
+            color: #f68e2e;
+            font-size: 30px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main">
+        <header class="header">
+            <div class="grid wide">
+                <div class="header__list">
+                    <div class="header__left">SIÊU THỊ NỘI THẤT & TRANG TRÍ EVO NỘI THẤT</div>
+                    <div class="header__right hide-on-mobile-tablet">
+                        <div class="header__right-login">
+                            <a href="./login.html">
+                                <i class="header__right-login-icon fa-solid fa-right-to-bracket"></i>
+                                Đăng nhập
+                            </a>
+                        </div>
+                        <div class="header__right-register">
+                            <a href="./register.html">
+                                <i class="header__right-register-icon fa-solid fa-user-plus"></i>
+                                Đăng ký
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <div class="grid wide">
+            <div class="header-logo-search-cart">
+                <button class="res_btn"><i class="fa-solid fa-bars"></i></button>
+                <div class="header-logo hide-on-mobile">
+                    <a href="./index.html"><img src="../assets/img/logo.webp" alt="" class="header-img"></a>
+                </div>
+                <div class="header-search">
+
+                    <input type="text" placeholder="Bạn muốn tìm gì?">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <!-- <div class="header-search-input">
+                        <span>Bạn muốn tìm gì?</span>
+                    </div>
+                    <div class="header-search-icon">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </div> -->
+                </div>
+                <div class="header-hotline-cart">
+                    <div class="header-hotline-cart-list">
+                        <div class="header-hotline hide-on-mobile-tablet">
+                            <a href="#">
+                                <span class="header-hotline-title">Liên hệ Hotline</span>
+                                <span class="header-hotline-if">1900 1900</span>
+                            </a>
+                        </div>
+                        <div class="header-address hide-on-mobile-tablet">
+                            <a href="#">
+                                <span class="header-address-title">Tìm địa chỉ</span>
+                                <span class="header-address-if">Cửa hàng</span>
+                            </a>
+                        </div>
+                        <div class="header__cart">
+                            <div class="header__cart-wrap">
+                                <a href="./cart.html"><i class="header__cart-icon fa-sharp fa-solid fa-cart-shopping"></i></a>
+                                <!-- <span class="header__cart-notice">3</span> -->
+                                 <!-- No cart: header__cart-list--no-cart -->
+                                <div class="header__cart-list header__cart-list--no-cart">
+                                    <img src="../assets/img/no-cart.png" alt="" class="header__cart-no-cart-img">
+                                    <span class="header__cart-list--nocart-msg">
+                                        Chưa có sản phẩm
+                                    </span>
+    
+                                    <!-- Có sản phẩm -->
+                                    <!-- <h4 class="header__cart-heading">Sản phẩm đã thêm</h4>
+                                    <ul class="header__cart-list-item">
+                                        <li class="header__cart-item">
+                                            <img src="https://cf.shopee.vn/file/1208821b0718d1965e79e6d432967e39_tn" alt="" class="header__cart-img">
+                                            <div class="header__cart-item-info">
+                                                <div class="header__cart-item-head">
+                                                    <h5 class="header__cart-item-name">Bộ kem đặc trị vùng mắt</h5>
+                                                    <div class="header__cart-item-price-wrap">
+                                                        <span class="header__cart-item-price">2.000.000đ</span>
+                                                        <span class="header__cart-item-multiply">x</span>
+                                                        <span class="header__cart-item-quantity">1</span>
+                                                    </div>
+                                                </div>
+                                                <div class="header__cart-item-body">
+                                                    <span class="header__cart-item-description">
+                                                        Phân loại hàng: Bạc
+                                                    </span>
+                                                    <span class="header__cart-item-remote">Xóa</span>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="header__cart-item">
+                                            <img src="https://cf.shopee.vn/file/bc98158704fc647914f372e3c83bc14e" alt="" class="header__cart-img">
+                                            <div class="header__cart-item-info">
+                                                <div class="header__cart-item-head">
+                                                    <h5 class="header__cart-item-name">Set sữa rửa mặt Ohui Prime</h5>
+                                                    <div class="header__cart-item-price-wrap">
+                                                        <span class="header__cart-item-price">1.035.000đ</span>
+                                                        <span class="header__cart-item-multiply">x</span>
+                                                        <span class="header__cart-item-quantity">1</span>
+                                                    </div>
+                                                </div>
+                                                <div class="header__cart-item-body">
+                                                    <span class="header__cart-item-description">
+                                                        Phân loại hàng: Bạc
+                                                    </span>
+                                                    <span class="header__cart-item-remote">Xóa</span>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="header__cart-item">
+                                            <img src="https://cf.shopee.vn/file/sg-11134201-22100-cmzlfx4ypliv7b" alt="" class="header__cart-img">
+                                            <div class="header__cart-item-info">
+                                                <div class="header__cart-item-head">
+                                                    <h5 class="header__cart-item-name">Cushion trang điểm dưỡng</h5>
+                                                    <div class="header__cart-item-price-wrap">
+                                                        <span class="header__cart-item-price">1.350.000đ</span>
+                                                        <span class="header__cart-item-multiply">x</span>
+                                                        <span class="header__cart-item-quantity">1</span>
+                                                    </div>
+                                                </div>
+                                                <div class="header__cart-item-body">
+                                                    <span class="header__cart-item-description">
+                                                        Phân loại hàng: Bạc
+                                                    </span>
+                                                    <span class="header__cart-item-remote">Xóa</span>
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </ul> 
+                                    <a href="#" class="header__cart-view-cart btn btn--primary">Xem giỏ hàng</a> -->
+                                </div>
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="menu hide-on-mobile-tablet">
+            <div class="grid wide">
+                <div class="row">
+                    <div class="grid__column-1">
+                        <div class="menu__main">
+                            <i class="fa-solid fa-bars"></i>
+                            <span>Tất cả sản phẩm</span>
+                            <i class="fa-solid fa-angle-down"></i>
+                        </div>
+                    </div>
+                    <div class="grid__column-3">
+                        <ul class="nav__list">
+                            <li class="nav__item ">
+                                <a  href="./index.html">Trang chủ</a>
+                            </li>
+                            <li class="nav__item "><a href="./introduce.html">Giới thiệu</a> </li>
+                            <li class="nav__item ">
+                                <a href="./products.html">
+                                    Sản phẩm
+                                    <i class="fa-solid fa-angle-down"></i>
+                                </a>
+                            </li>
+                            <li class="nav__item nav__item--active"><a href="./new__products.html">Hàng mới về</a></li>
+                            <li class="nav__item"><a href="./news.html">Tin tức</a></li>
+                            <li class="nav__item"><a href="./contact.html">Liên hệ</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal hide">
+            <div class="modal-inner">
+                <div class="modal-header">
+                    <img src="../assets/img/logo.webp" alt="">
+                    <i class="fa-solid fa-arrow-left"></i>
+                </div>
+                <div class="modal-content">
+                    <a href="./login.html">Đăng nhập</a>
+                    <a href="./register.html">Đăng ký</a>
+                </div>
+                <div class="menu__main">
+                    <i class="fa-solid fa-bars"></i>
+                    <span>Tất cả sản phẩm</span>
+                    <i class="fa-solid fa-angle-down"></i>
+                </div>
+                <ul class="menu__list">
+                    <li class="menu__item"><a href="">Nội thất gỗ</a></li>
+                    <li class="menu__item"><a href="">Sofa, Ghế thư giãn & Nệm</a></li>
+                    <li class="menu__item"><a href="">Đồ trang trí</a></li>
+                    <li class="menu__item"><a href="">Đồ dùng vải</a></li>
+                    <li class="menu__item"><a href="">Vật dụng bàn ăn</a></li>
+                    <li class="menu__item"><a href="">Đồ dùng văn phòng</a></li>
+                    <li class="menu__item"><a href="">Đèn</a></li>
+                    <li class="menu__item"><a href="">Xem thêm ...</a></li>
+                </ul>
+                <ul class="nav__list">
+                    <li class="nav__item ">
+                        <a  href="./index.html">Trang chủ</a>
+                    </li>
+                    <li class="nav__item "><a href="./introduce.html">Giới thiệu</a> </li>
+                    <li class="nav__item ">
+                        <a href="./products.html">
+                            Sản phẩm
+                            <i class="fa-solid fa-angle-down"></i>
+                        </a>
+                    </li>
+                    <li class="nav__item nav__item--active"><a href="./new__products.html">Hàng mới về</a></li>
+                    <li class="nav__item"><a href="./news.html">Tin tức</a></li>
+                    <li class="nav__item"><a href="./contact.html">Liên hệ</a></li>
+                </ul>
+            </div>
+        </div>
+        <nav class="nav__mini">
+            <div class="grid wide">
+                <span><a href="./index.html">Trang chủ</a> > Hàng mới về</span>
+            </div>
+        </nav>
+        <div class="grid wide ">
+            <p class="products__heading">Tất cả sản phẩm</p>
+            <img class="products__img" src="../assets/img/cat-banner-1.webp" alt="">
+            <div class="category hide-on-mobile">
+                <div class="row" id="category">
+                    <div class="grid__column-1_6">
+                        <a href="" class="products__container__picture">
+                            <img class="products__container__img" src="../assets/img/desk.webp" alt="">
+                            <span class="products__container__label">Nội thất gỗ</span>
+                        </a>
+                    </div>
+                    <div class="grid__column-1_6">
+                        <a href="" class="products__container__picture">
+                            <img class="products__container__img" src="../assets/img/sofa.webp" alt="">
+                            <span class="products__container__label">Sofa, Ghế thư giãn</span>
+                        </a>
+                    </div>
+                    <div class="grid__column-1_6">
+                        <a href="" class="products__container__picture">
+                            <img class="products__container__img" src="../assets/img/living-room.webp" alt="">
+                            <span class="products__container__label">Đồ trang trí</span>
+                        </a>
+                    </div>
+                    <div class="grid__column-1_6">
+                        <a href="" class="products__container__picture">
+                            <img class="products__container__img" src="../assets/img/curtains.webp" alt="">
+                            <span class="products__container__label">Đồ dùng vải</span>
+                        </a>
+                    </div>
+                    <div class="grid__column-1_6">
+                        <a href="" class="products__container__picture">
+                            <img class="products__container__img" src="../assets/img/dinner-table.webp" alt="">
+                            <span class="products__container__label">Vật dụng bàn ăn</span>
+                        </a>
+                    </div>
+                    <div class="grid__column-1_6">
+                        <a href="" class="products__container__picture">
+                            <img class="products__container__img" src="../assets/img/work-station-1.webp" alt="">
+                            <span class="products__container__label">Đồ dùng văn phòng</span>
+                        </a>
+                    </div>
+                    <div class="grid__column-1_6">
+                        <a href="" class="products__container__picture">
+                            <img class="products__container__img" src="../assets/img/ceiling-lamp.webp" alt="">
+                            <span class="products__container__label">Đèn</span>
+                        </a>
+                    </div>
+                    <div class="grid__column-1_6">
+                        <a href="" class="products__container__picture">
+                            <img class="products__container__img" src="../assets/img/stove.webp" alt="">
+                            <span class="products__container__label">Dụng cụ nhà bếp</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col l-3 m-0 c-0">
+                    
+                    <ul class="sidebar__left__list">
+                        <span class="sidebar__left__heading">Danh mục</span>
+                        <li class="sidebar__left__item">
+                            <a href="">Trang chủ</a>
+                        </li>
+                        <li class="sidebar__left__item">
+                            <a href="">Giới thiệu</a>
+                        </li>
+                        <li class="sidebar__left__item">
+                            <a href="">Sản phẩm</a>
+                            <i class="fa-regular fa-plus"></i>
+                        </li>
+                        <li class="sidebar__left__item">
+                            <a href="">Hàng mới về</a>
+                        </li>
+                        <li class="sidebar__left__item">
+                            <a href="">Tin tức</a>
+                        </li>
+                        <li class="sidebar__left__item">
+                            <a href="">Liên hệ</a>
+                        </li>
+                        
+                    </ul>
+                    
+                    <div class="aside__list">
+                        <div class="aside__heading">TÌM THEO</div>
+                        <div class="aside__item">
+                            <div class="aside__title">GIÁ SẢN PHẨM</div>
+                            <ul class="aside__content__list">
+                                <li class="aside__content__item">
+                                    <input type="checkbox">
+                                    <label for=""> Giá dưới 100.000đ</label>
+                                </li>
+                                <li class="aside__content__item">
+                                    <input type="checkbox">
+                                    <label for=""> 100.000đ - 200.000đ</label>
+                                </li>
+                                <li class="aside__content__item">
+                                    <input type="checkbox">
+                                    <label for=""> 200.000đ - 300.000đ</label>
+                                </li>
+                                <li class="aside__content__item">
+                                    <input type="checkbox">
+                                    <label for=""> 300.000đ - 500.000đ</label>
+                                </li>
+                                <li class="aside__content__item">
+                                    <input type="checkbox">
+                                    <label for=""> 500.000đ - 1.000.000đ</label>
+                                </li>
+                                <li class="aside__content__item">
+                                    <input type="checkbox">
+                                    <label for=""> Giá trên 1.000.000đ</label>
+                                </li>
+                                
+                            </ul>
+                        </div>
+                        <div class="aside__item">
+                            <div class="aside__title">THƯƠNG HIỆU</div>
+                            <div class="aside__search">
+                                <input type="text" placeholder="Tìm thương hiệu" value="">
+                                <i class="fa-solid fa-magnifying-glass"></i>
+                            </div>
+                            <ul class="aside__content__list">
+                                <li class="aside__content__item">
+                                    <input type="checkbox">
+                                    <label for=""> Angelina</label>
+                                </li>
+                                <li class="aside__content__item">
+                                    <input type="checkbox">
+                                    <label for=""> Ant Furni</label>
+                                </li>
+                                <li class="aside__content__item">
+                                    <input type="checkbox">
+                                    <label for=""> Eroomn</label>
+                                </li>
+                                <li class="aside__content__item">
+                                    <input type="checkbox">
+                                    <label for=""> Evo Nội thất</label>
+                                </li>
+                                <li class="aside__content__item">
+                                    <input type="checkbox">
+                                    <label for=""> HABITAT</label>
+                                </li>
+                                <li class="aside__content__item">
+                                    <input type="checkbox">
+                                    <label for=""> Harmonydeco</label>
+                                </li>
+                                
+                            </ul>
+                        </div>
+                        <div class="aside__item">
+                            <div class="aside__title">LOẠI</div>
+                            <div class="aside__search">
+                                <input type="text" placeholder="Tìm loại" value="">
+                                <i class="fa-solid fa-magnifying-glass"></i>
+                            </div>
+                            <ul class="aside__content__list">
+                                <li class="aside__content__item">
+                                    <input type="checkbox">
+                                    <label for=""> Bàn cà phê</label>
+                                </li>
+                                <li class="aside__content__item">
+                                    <input type="checkbox">
+                                    <label for=""> Bàn trang điểm</label>
+                                </li>
+                                <li class="aside__content__item">
+                                    <input type="checkbox">
+                                    <label for=""> Tấm trải giường</label>
+                                </li>
+                                <li class="aside__content__item">
+                                    <input type="checkbox">
+                                    <label for=""> Thảm trải sàn</label>
+                                </li>
+                                <li class="aside__content__item">
+                                    <input type="checkbox">
+                                    <label for=""> Tủ bếp</label>
+                                </li>
+                                <li class="aside__content__item">
+                                    <input type="checkbox">
+                                    <label for=""> Tủ đầu giường</label>
+                                </li>
+                                <li class="aside__content__item">
+                                    <input type="checkbox">
+                                    <label for=""> Tủ giày</label>
+                                </li>
+                                <li class="aside__content__item">
+                                    <input type="checkbox">
+                                    <label for=""> Vỏ gối</label>
+                                </li>
+                                <li class="aside__content__item">
+                                    <input type="checkbox">
+                                    <label for=""> Vỏ gối</label>
+                                </li>
+                                
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="aside__banner">
+                        <div class="aside__heading">TÌM THEO</div>
+                        <img src="../assets/img/aside_banner.webp" alt="">
+                    </div>
+                </div>
+                <div class="col l-9 m-9 c-12">
+                    <div class="home-filter hide-on-mobile">
+                        <span class="home-filter__label">Sắp xếp theo</span>
+                        <button class="home-filter__btn btn">Phổ biến</button>
+                        <button class="home-filter__btn btn ">Mới nhất</button>
+                        <button class="home-filter__btn btn">Bán chạy</button>
+
+                        <div class="select-input">
+                            <span class="select-input__label">Giá</span>
+                            <i class="select-input__icon fa-solid fa-chevron-down"></i>
+                            <ul class="select-input__list">
+                                <li class="select-input__item">
+                                    <a href="" class="select-input__link">Giá: Thấp đến cao</a>
+                                </li>
+                                <li class="select-input__item">
+                                    <a href="" class="select-input__link">Giá: Cao đến thấp</a>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="home-filter__page">
+                            <span class="home-filter__page-num">
+                                <span class="home-filter__page-current">1</span>/14
+                            </span>
+                            <div class="home-filter__page-control">
+                                <a href="" class="home-filter__page-btn home-filter__page-btn--disabled">
+                                    <i class="home-filter__page-icon fa-solid fa-chevron-left"></i>
+                                </a>
+                                <a href="" class="home-filter__page-btn">
+                                    <i class="home-filter__page-icon fa-solid fa-chevron-right"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="home__product">
+                        <div class="grid wide">
+                            <div class="row">
+                                <div class="col l-4 m-4 c-6">
+                                    <a class="product__item" href="./products.html">
+                                        <img src="../assets/img/kệ gỗ.jfif" alt="" class="product__img">
+                                        <h4 class="product__name">Kệ giá sách cho bé, kệ gỗ đa năng để sách cho bé theo Montessori
+                                            của MINDESIGN,trang trí phòng học,gỗ Thông tự nhiên!</h4>
+                                        <div class="product__price">
+                                            <span class="product__price-old">659.000đ</span>
+                                            <span class="product__price-current">625.000đ</span>
+                                        </div>
+                                        <div class="product__action">
+                                            <span class="product__action__like product__action__like--liked">
+                                                <i class="product__action__like-icon-empty fa-regular fa-heart"></i>
+                                                <i class="product__action__like-icon-fill fa-solid fa-heart"></i>
+                                            </span>
+                                            <div class="product__rating">
+                                                <i class="product__rating__star--gold fa-solid fa-star"></i>
+                                                <i class="product__rating__star--gold fa-solid fa-star"></i>
+                                                <i class="product__rating__star--gold fa-solid fa-star"></i>
+                                                <i class="product__rating__star--gold fa-solid fa-star"></i>
+                                                <i class="product__rating__star--gold fa-solid fa-star"></i>
+                                            </div>
+                                            <span class="product__sold">Đã bán 522</span>
+                                        </div>
+                                        <div class="product__origin">
+                                            <span class="product__origin__brand">MINDESIGN</span>
+                                            <span class="product__origin__origin-name">Hà Nội</span>
+                                        </div>
+                                        <div class="product__favourite">
+                                            <i class="fa-solid fa-check"></i>
+                                            Yêu thích
+                                        </div>
+                                        <div class="product__sale-off">
+                                            <span class="product__sale-off-percent">5%</span>
+                                            <span class="product__sale-off-label">GIẢM</span>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="col l-4 m-4 c-6">
+                                    <a class="product__item" href="#">
+                                        <img src="../assets/img/img1.webp" alt="" class="product__img">
+                                        <h4 class="product__name">Tủ bếp bằng gỗ tự nhiên nhỏ gọn đa năng tiện lợi</h4>
+                                        <div class="product__price">
+                                            <span class="product__price-old">12.500.000đ</span>
+                                            <span class="product__price-current">10.000.000đ</span>
+                                        </div>
+                                        <div class="product__action">
+                                            <span class="product__action__like product__action__like--liked">
+                                                <i class="product__action__like-icon-empty fa-regular fa-heart"></i>
+                                                <i class="product__action__like-icon-fill fa-solid fa-heart"></i>
+                                            </span>
+                                            <div class="product__rating">
+                                                <i class="product__rating__star--gold fa-solid fa-star"></i>
+                                                <i class="product__rating__star--gold fa-solid fa-star"></i>
+                                                <i class="product__rating__star--gold fa-solid fa-star"></i>
+                                                <i class="product__rating__star--gold fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                            </div>
+                                            <span class="product__sold">Đã bán 2,3k</span>
+                                        </div>
+                                        <div class="product__origin">
+                                            <span class="product__origin__brand">Evo Nội thất</span>
+                                            <span class="product__origin__origin-name">Hà Nội</span>
+                                        </div>
+                                        <div class="product__favourite">
+                                            <i class="fa-solid fa-check"></i>
+                                            Yêu thích
+                                        </div>
+                                        <div class="product__sale-off">
+                                            <span class="product__sale-off-percent">20%</span>
+                                            <span class="product__sale-off-label">GIẢM</span>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="col l-4 m-4 c-6">
+                                    <a class="product__item" href="#">
+                                        <img src="../assets/img/kệ để giày.jfif" alt="" class="product__img">
+                                        <h4 class="product__name">Kệ để giày dép,Kệ gỗ 5 tầng sang trọng.mẫu mới 2022</h4>
+                                        <div class="product__price">
+                                            <span class="product__price-old">169.000đ</span>
+                                            <span class="product__price-current">125.000đ</span>
+                                        </div>
+                                        <div class="product__action">
+                                            <span class="product__action__like product__action__like--liked">
+                                                <i class="product__action__like-icon-empty fa-regular fa-heart"></i>
+                                                <i class="product__action__like-icon-fill fa-solid fa-heart"></i>
+                                            </span>
+                                            <div class="product__rating">
+                                                <i class="product__rating__star--gold fa-solid fa-star"></i>
+                                                <i class="product__rating__star--gold fa-solid fa-star"></i>
+                                                <i class="product__rating__star--gold fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                            </div>
+                                            <span class="product__sold">Đã bán 132</span>
+                                        </div>
+                                        <div class="product__origin">
+                                            <span class="product__origin__brand">Kệ gỗ</span>
+                                            <span class="product__origin__origin-name">Hà Nội</span>
+                                        </div>
+                                        <div class="product__favourite">
+                                            <i class="fa-solid fa-check"></i>
+                                            Yêu thích
+                                        </div>
+                                        <div class="product__sale-off">
+                                            <span class="product__sale-off-percent">25%</span>
+                                            <span class="product__sale-off-label">GIẢM</span>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="col l-4 m-4 c-6">
+                                    <a class="product__item" href="#">
+                                        <img src="../assets/img/Kệ sách.jfif" alt="" class="product__img">
+                                        <h4 class="product__name">Kệ sách Gỗ treo tường hiện đại đa năng chính hãng IGA phòng sách-
+                                            GP14</h4>
+                                        <div class="product__price">
+                                            <span class="product__price-old">328.000đ</span>
+                                            <span class="product__price-current">291.000đ</span>
+                                        </div>
+                                        <div class="product__action">
+                                            <span class="product__action__like product__action__like--liked">
+                                                <i class="product__action__like-icon-empty fa-regular fa-heart"></i>
+                                                <i class="product__action__like-icon-fill fa-solid fa-heart"></i>
+                                            </span>
+                                            <div class="product__rating">
+                                                <i class="product__rating__star--gold fa-solid fa-star"></i>
+                                                <i class="product__rating__star--gold fa-solid fa-star"></i>
+                                                <i class="product__rating__star--gold fa-solid fa-star"></i>
+                                                <i class="product__rating__star--gold fa-solid fa-star"></i>
+                                                <i class="product__rating__star--gold fa-solid fa-star"></i>
+                                            </div>
+                                            <span class="product__sold">Đã bán 572</span>
+                                        </div>
+                                        <div class="product__origin">
+                                            <span class="product__origin__brand">IGA</span>
+                                            <span class="product__origin__origin-name">TP HCM</span>
+                                        </div>
+                                        <div class="product__favourite">
+                                            <i class="fa-solid fa-check"></i>
+                                            Yêu thích
+                                        </div>
+                                        <div class="product__sale-off">
+                                            <span class="product__sale-off-percent">11%</span>
+                                            <span class="product__sale-off-label">GIẢM</span>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="col l-4 m-4 c-6">
+                                    <a class="product__item" href="./products.html">
+                                        <img src="../assets/img/kệ gỗ.jfif" alt="" class="product__img">
+                                        <h4 class="product__name">Kệ giá sách cho bé, kệ gỗ đa năng để sách cho bé theo Montessori
+                                            của MINDESIGN,trang trí phòng học,gỗ Thông tự nhiên!</h4>
+                                        <div class="product__price">
+                                            <span class="product__price-old">659.000đ</span>
+                                            <span class="product__price-current">625.000đ</span>
+                                        </div>
+                                        <div class="product__action">
+                                            <span class="product__action__like product__action__like--liked">
+                                                <i class="product__action__like-icon-empty fa-regular fa-heart"></i>
+                                                <i class="product__action__like-icon-fill fa-solid fa-heart"></i>
+                                            </span>
+                                            <div class="product__rating">
+                                                <i class="product__rating__star--gold fa-solid fa-star"></i>
+                                                <i class="product__rating__star--gold fa-solid fa-star"></i>
+                                                <i class="product__rating__star--gold fa-solid fa-star"></i>
+                                                <i class="product__rating__star--gold fa-solid fa-star"></i>
+                                                <i class="product__rating__star--gold fa-solid fa-star"></i>
+                                            </div>
+                                            <span class="product__sold">Đã bán 522</span>
+                                        </div>
+                                        <div class="product__origin">
+                                            <span class="product__origin__brand">MINDESIGN</span>
+                                            <span class="product__origin__origin-name">Hà Nội</span>
+                                        </div>
+                                        <div class="product__favourite">
+                                            <i class="fa-solid fa-check"></i>
+                                            Yêu thích
+                                        </div>
+                                        <div class="product__sale-off">
+                                            <span class="product__sale-off-percent">5%</span>
+                                            <span class="product__sale-off-label">GIẢM</span>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="col l-4 m-4 c-6">
+                                    <a class="product__item" href="#">
+                                        <img src="../assets/img/img1.webp" alt="" class="product__img">
+                                        <h4 class="product__name">Tủ bếp bằng gỗ tự nhiên nhỏ gọn đa năng tiện lợi</h4>
+                                        <div class="product__price">
+                                            <span class="product__price-old">12.500.000đ</span>
+                                            <span class="product__price-current">10.000.000đ</span>
+                                        </div>
+                                        <div class="product__action">
+                                            <span class="product__action__like product__action__like--liked">
+                                                <i class="product__action__like-icon-empty fa-regular fa-heart"></i>
+                                                <i class="product__action__like-icon-fill fa-solid fa-heart"></i>
+                                            </span>
+                                            <div class="product__rating">
+                                                <i class="product__rating__star--gold fa-solid fa-star"></i>
+                                                <i class="product__rating__star--gold fa-solid fa-star"></i>
+                                                <i class="product__rating__star--gold fa-solid fa-star"></i>
+                                                <i class="product__rating__star--gold fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                            </div>
+                                            <span class="product__sold">Đã bán 2,3k</span>
+                                        </div>
+                                        <div class="product__origin">
+                                            <span class="product__origin__brand">Evo Nội thất</span>
+                                            <span class="product__origin__origin-name">Hà Nội</span>
+                                        </div>
+                                        <div class="product__favourite">
+                                            <i class="fa-solid fa-check"></i>
+                                            Yêu thích
+                                        </div>
+                                        <div class="product__sale-off">
+                                            <span class="product__sale-off-percent">20%</span>
+                                            <span class="product__sale-off-label">GIẢM</span>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="col l-4 m-4 c-6">
+                                    <a class="product__item" href="#">
+                                        <img src="../assets/img/kệ để giày.jfif" alt="" class="product__img">
+                                        <h4 class="product__name">Kệ để giày dép,Kệ gỗ 5 tầng sang trọng.mẫu mới 2022</h4>
+                                        <div class="product__price">
+                                            <span class="product__price-old">169.000đ</span>
+                                            <span class="product__price-current">125.000đ</span>
+                                        </div>
+                                        <div class="product__action">
+                                            <span class="product__action__like product__action__like--liked">
+                                                <i class="product__action__like-icon-empty fa-regular fa-heart"></i>
+                                                <i class="product__action__like-icon-fill fa-solid fa-heart"></i>
+                                            </span>
+                                            <div class="product__rating">
+                                                <i class="product__rating__star--gold fa-solid fa-star"></i>
+                                                <i class="product__rating__star--gold fa-solid fa-star"></i>
+                                                <i class="product__rating__star--gold fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                            </div>
+                                            <span class="product__sold">Đã bán 132</span>
+                                        </div>
+                                        <div class="product__origin">
+                                            <span class="product__origin__brand">Kệ gỗ</span>
+                                            <span class="product__origin__origin-name">Hà Nội</span>
+                                        </div>
+                                        <div class="product__favourite">
+                                            <i class="fa-solid fa-check"></i>
+                                            Yêu thích
+                                        </div>
+                                        <div class="product__sale-off">
+                                            <span class="product__sale-off-percent">25%</span>
+                                            <span class="product__sale-off-label">GIẢM</span>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="col l-4 m-4 c-6">
+                                    <a class="product__item" href="#">
+                                        <img src="../assets/img/Kệ sách.jfif" alt="" class="product__img">
+                                        <h4 class="product__name">Kệ sách Gỗ treo tường hiện đại đa năng chính hãng IGA phòng sách-
+                                            GP14</h4>
+                                        <div class="product__price">
+                                            <span class="product__price-old">328.000đ</span>
+                                            <span class="product__price-current">291.000đ</span>
+                                        </div>
+                                        <div class="product__action">
+                                            <span class="product__action__like product__action__like--liked">
+                                                <i class="product__action__like-icon-empty fa-regular fa-heart"></i>
+                                                <i class="product__action__like-icon-fill fa-solid fa-heart"></i>
+                                            </span>
+                                            <div class="product__rating">
+                                                <i class="product__rating__star--gold fa-solid fa-star"></i>
+                                                <i class="product__rating__star--gold fa-solid fa-star"></i>
+                                                <i class="product__rating__star--gold fa-solid fa-star"></i>
+                                                <i class="product__rating__star--gold fa-solid fa-star"></i>
+                                                <i class="product__rating__star--gold fa-solid fa-star"></i>
+                                            </div>
+                                            <span class="product__sold">Đã bán 572</span>
+                                        </div>
+                                        <div class="product__origin">
+                                            <span class="product__origin__brand">IGA</span>
+                                            <span class="product__origin__origin-name">TP HCM</span>
+                                        </div>
+                                        <div class="product__favourite">
+                                            <i class="fa-solid fa-check"></i>
+                                            Yêu thích
+                                        </div>
+                                        <div class="product__sale-off">
+                                            <span class="product__sale-off-percent">11%</span>
+                                            <span class="product__sale-off-label">GIẢM</span>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="col l-4 m-4 c-6">
+                                    <a class="product__item" href="#">
+                                        <img src="../assets/img/Kệ sách.jfif" alt="" class="product__img">
+                                        <h4 class="product__name">Kệ sách Gỗ treo tường hiện đại đa năng chính hãng IGA phòng sách-
+                                            GP14</h4>
+                                        <div class="product__price">
+                                            <span class="product__price-old">328.000đ</span>
+                                            <span class="product__price-current">291.000đ</span>
+                                        </div>
+                                        <div class="product__action">
+                                            <span class="product__action__like product__action__like--liked">
+                                                <i class="product__action__like-icon-empty fa-regular fa-heart"></i>
+                                                <i class="product__action__like-icon-fill fa-solid fa-heart"></i>
+                                            </span>
+                                            <div class="product__rating">
+                                                <i class="product__rating__star--gold fa-solid fa-star"></i>
+                                                <i class="product__rating__star--gold fa-solid fa-star"></i>
+                                                <i class="product__rating__star--gold fa-solid fa-star"></i>
+                                                <i class="product__rating__star--gold fa-solid fa-star"></i>
+                                                <i class="product__rating__star--gold fa-solid fa-star"></i>
+                                            </div>
+                                            <span class="product__sold">Đã bán 572</span>
+                                        </div>
+                                        <div class="product__origin">
+                                            <span class="product__origin__brand">IGA</span>
+                                            <span class="product__origin__origin-name">TP HCM</span>
+                                        </div>
+                                        <div class="product__favourite">
+                                            <i class="fa-solid fa-check"></i>
+                                            Yêu thích
+                                        </div>
+                                        <div class="product__sale-off">
+                                            <span class="product__sale-off-percent">11%</span>
+                                            <span class="product__sale-off-label">GIẢM</span>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="pagination">
+                        <ul class="pagination__list">
+                            <li class="pagination__item">
+                                <a href=""><i class="fa-solid fa-angles-left"></i></a>
+                            </li>
+                            <li class="pagination__item pagination__item__active">
+                                <a href="">1</a>
+                            </li>
+                            <li class="pagination__item">
+                                <a href="">2</a>
+                            </li>
+                            <li class="pagination__item">
+                                <a href="">3</a>
+                            </li>
+                            <li class="pagination__item">
+                                <a href="">4</a>
+                            </li>
+                            <li class="pagination__item">
+                                <a href=""><i class="fa-solid fa-angles-right"></i></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer">
+            <div class="grid wide">
+                <div class="row">
+                    <div class="col l-3 m-6 c-12">
+                        <h3 class="footer__heading">Về chúng tôi</h3>
+                        <ul class="footer__list">
+                            <li class="footer__item"><a href="./index.html">Trang chủ</a></li>
+                            <li class="footer__item"><a href="./introduce.html">Giới thiệu</a></li>
+                            <li class="footer__item"><a href="./products.html">Sản phẩm</a></li>
+                            <li class="footer__item"><a href="./new__products.html">Hàng mới về</a></li>
+                            <li class="footer__item"><a href="./news.html">Tin tức</a></li>
+                            <li class="footer__item"><a href="./contact.html">Liên hệ</a></li>
+                        </ul>
+                    </div>
+                    <div class="col l-3 m-6 c-12">
+                        <h3 class="footer__heading">Hỗ trợ khách hàng</h3>
+                        <ul class="footer__list">
+                            <li class="footer__item"><a href="./index.html">Trang chủ</a></li>
+                            <li class="footer__item"><a href="./introduce.html">Giới thiệu</a></li>
+                            <li class="footer__item"><a href="./products.html">Sản phẩm</a></li>
+                            <li class="footer__item"><a href="./new__products.html">Hàng mới về</a></li>
+                            <li class="footer__item"><a href="./news.html">Tin tức</a></li>
+                            <li class="footer__item"><a href="./contact.html">Liên hệ</a></li>
+                        </ul>
+                    </div>
+                    <div class="col l-3 m-6 c-12">
+                        <h3 class="footer__heading">Liên hệ với chúng tôi</h3>
+                        <ul class="footer__list">
+                            <li class="footer__item">
+                                <div class="footer__item__heading">Địa chỉ</div>
+                                <div class="footer__item__text"> 70 Lu Gia, Ward 15, District 11, Ho Chi Minh City</div>
+                            </li>
+                            <li class="footer__item">
+                                <div class="footer__item__heading"> Hotline</div>
+                                <div class="footer__item__text"><a href="tel:1900 6750"> 1900 6750</a></div>
+                            </li>
+                            <li class="footer__item">
+                                <div class="footer__item__heading"> Email</div>
+                                <div class="footer__item__text"><a href="mailto:support@sapo.vn"> support@sapo.vn</a></div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col l-3 m-6 c-12">
+                        <h3 class="footer__heading">Đăng ký nhận bảng tin</h3>
+                        <form action="" class="footer__form">
+                            <input type="email" placeholder="Email của bạn">
+                            <i class="fa-regular fa-paper-plane"></i>
+                        </form>
+                        <div class="footer__item__text">Bạn là khách hàng mới. Đăng ký email và nhận mã giảm giá 50.000
+                            đ.</div>
+                        <div class="footer__img">
+                            <img src="../assets/img/payment-1.svg" alt="">
+                            <img src="../assets/img/payment-2.svg" alt="">
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <div class="footer__bottom">
+                <div class="grid wide">
+                    <p class="footer__text">© 2015 - Bản quyền thuộc về Evo Themes | Cung cấp bởi Sapo</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="../assets/js/script.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"
+        integrity="sha512-HGOnQO9+SP1V92SrtZfjqxxtLmVzqZpjFFekvzZVWoiASSQgSr4cw9Kqd2+l8Llp4Gm0G8GIFJ4ddwZilcdb8A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.js"
+        integrity="sha512-eP8DK17a+MOcKHXC5Yrqzd8WI5WKh6F1TIk5QZ/8Lbv+8ssblcz7oGC8ZmQ/ZSAPa7ZmsCU4e/hcovqR8jfJqA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script type="text/javascript">
+        $('#category').slick({
+            slidesToShow: 6,
+            slidesToScroll: 1
+        });
+
+        var filtered = false;
+
+        $('.js-filter').on('click', function () {
+            if (filtered === false) {
+                $('.filtering').slick('slickFilter', ':even');
+                $(this).text('Unfilter Slides');
+                filtered = true;
+            } else {
+                $('.filtering').slick('slickUnfilter');
+                $(this).text('Filter Slides');
+                filtered = false;
+            }
+        });
+    </script>
+</body>
+
+</html>

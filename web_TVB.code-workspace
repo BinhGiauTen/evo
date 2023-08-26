@@ -1,0 +1,16 @@
+{
+	"folders": [
+		{
+			"path": "."
+		},
+		{
+			"path": "D:/2023/HT&CNWeb/chayThuCodeTuan9"
+		},
+		{
+			"path": "D:/2023/HT&CNWeb/ONTAP"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "ONTAP"
+	}
+}

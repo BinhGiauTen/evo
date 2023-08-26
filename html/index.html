@@ -1,0 +1,827 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trang chủ</title>
+    <link rel="shortcut icon" href="../assets/img/logo.png">
+    <link rel="stylesheet" href="../assets/fonts/fontawesome-free-6.3.0-web/css/all.css">
+    <link rel="stylesheet" href="../assets/css/base.css">
+    <link rel="stylesheet" href="../assets/css/main.css">
+    <link rel="stylesheet" href="../assets/css/grid.css">
+    <link rel="stylesheet" href="../assets/css/responsive.css">
+
+</head>
+
+<body>
+    <div class="main">
+        <header class="header">
+            <div class="grid wide">
+                <div class="header__list">
+                    <div class="header__left">SIÊU THỊ NỘI THẤT & TRANG TRÍ EVO NỘI THẤT</div>
+                    <div class="header__right hide-on-mobile-tablet">
+                        <div class="header__right-login">
+                            <a href="./login.html">
+                                <i class="header__right-login-icon fa-solid fa-right-to-bracket"></i>
+                                Đăng nhập
+                            </a>
+                        </div>
+                        <div class="header__right-register">
+                            <a href="./register.html">
+                                <i class="header__right-register-icon fa-solid fa-user-plus"></i>
+                                Đăng ký
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <div class="grid wide">
+            <div class="header-logo-search-cart">
+                <button class="res_btn"><i class="fa-solid fa-bars"></i></button>
+                <div class="header-logo hide-on-mobile">
+                    <a href="./index.html"><img src="../assets/img/logo.webp" alt="" class="header-img"></a>
+                </div>
+                <div class="header-search">
+
+                    <input type="text" placeholder="Bạn muốn tìm gì?">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <!-- <div class="header-search-input">
+                        <span>Bạn muốn tìm gì?</span>
+                    </div>
+                    <div class="header-search-icon">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </div> -->
+                </div>
+                <div class="header-hotline-cart">
+                    <div class="header-hotline-cart-list">
+                        <div class="header-hotline hide-on-mobile-tablet">
+                            <a href="#">
+                                <span class="header-hotline-title">Liên hệ Hotline</span>
+                                <span class="header-hotline-if">1900 1900</span>
+                            </a>
+                        </div>
+                        <div class="header-address hide-on-mobile-tablet">
+                            <a href="#">
+                                <span class="header-address-title">Tìm địa chỉ</span>
+                                <span class="header-address-if">Cửa hàng</span>
+                            </a>
+                        </div>
+                        <div class="header__cart">
+                            <div class="header__cart-wrap">
+                                <a href="./cart.html"><i class="header__cart-icon fa-sharp fa-solid fa-cart-shopping"></i></a>
+                                <!-- <span class="header__cart-notice">3</span> -->
+                                 <!-- No cart: header__cart-list--no-cart -->
+                                <div class="header__cart-list header__cart-list--no-cart">
+                                    <img src="../assets/img/no-cart.png" alt="" class="header__cart-no-cart-img">
+                                    <span class="header__cart-list--nocart-msg">
+                                        Chưa có sản phẩm
+                                    </span>
+    
+                                    <!-- Có sản phẩm -->
+                                    <!-- <h4 class="header__cart-heading">Sản phẩm đã thêm</h4>
+                                    <ul class="header__cart-list-item">
+                                        <li class="header__cart-item">
+                                            <img src="https://cf.shopee.vn/file/1208821b0718d1965e79e6d432967e39_tn" alt="" class="header__cart-img">
+                                            <div class="header__cart-item-info">
+                                                <div class="header__cart-item-head">
+                                                    <h5 class="header__cart-item-name">Bộ kem đặc trị vùng mắt</h5>
+                                                    <div class="header__cart-item-price-wrap">
+                                                        <span class="header__cart-item-price">2.000.000đ</span>
+                                                        <span class="header__cart-item-multiply">x</span>
+                                                        <span class="header__cart-item-quantity">1</span>
+                                                    </div>
+                                                </div>
+                                                <div class="header__cart-item-body">
+                                                    <span class="header__cart-item-description">
+                                                        Phân loại hàng: Bạc
+                                                    </span>
+                                                    <span class="header__cart-item-remote">Xóa</span>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="header__cart-item">
+                                            <img src="https://cf.shopee.vn/file/bc98158704fc647914f372e3c83bc14e" alt="" class="header__cart-img">
+                                            <div class="header__cart-item-info">
+                                                <div class="header__cart-item-head">
+                                                    <h5 class="header__cart-item-name">Set sữa rửa mặt Ohui Prime</h5>
+                                                    <div class="header__cart-item-price-wrap">
+                                                        <span class="header__cart-item-price">1.035.000đ</span>
+                                                        <span class="header__cart-item-multiply">x</span>
+                                                        <span class="header__cart-item-quantity">1</span>
+                                                    </div>
+                                                </div>
+                                                <div class="header__cart-item-body">
+                                                    <span class="header__cart-item-description">
+                                                        Phân loại hàng: Bạc
+                                                    </span>
+                                                    <span class="header__cart-item-remote">Xóa</span>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="header__cart-item">
+                                            <img src="https://cf.shopee.vn/file/sg-11134201-22100-cmzlfx4ypliv7b" alt="" class="header__cart-img">
+                                            <div class="header__cart-item-info">
+                                                <div class="header__cart-item-head">
+                                                    <h5 class="header__cart-item-name">Cushion trang điểm dưỡng</h5>
+                                                    <div class="header__cart-item-price-wrap">
+                                                        <span class="header__cart-item-price">1.350.000đ</span>
+                                                        <span class="header__cart-item-multiply">x</span>
+                                                        <span class="header__cart-item-quantity">1</span>
+                                                    </div>
+                                                </div>
+                                                <div class="header__cart-item-body">
+                                                    <span class="header__cart-item-description">
+                                                        Phân loại hàng: Bạc
+                                                    </span>
+                                                    <span class="header__cart-item-remote">Xóa</span>
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </ul> 
+                                    <a href="#" class="header__cart-view-cart btn btn--primary">Xem giỏ hàng</a> -->
+                                </div>
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="menu hide-on-mobile-tablet">
+            <div class="grid wide">
+                <div class="row">
+                    <div class="grid__column-1">
+                        <div class="menu__main">
+                            <i class="fa-solid fa-bars"></i>
+                            <span>Tất cả sản phẩm</span>
+                            <i class="fa-solid fa-angle-down"></i>
+                        </div>
+                        <ul class="menu__list">
+                            <li class="menu__item"><a href="">Nội thất gỗ</a></li>
+                            <li class="menu__item"><a href="">Sofa, Ghế thư giãn & Nệm</a></li>
+                            <li class="menu__item"><a href="">Đồ trang trí</a></li>
+                            <li class="menu__item"><a href="">Đồ dùng vải</a></li>
+                            <li class="menu__item"><a href="">Vật dụng bàn ăn</a></li>
+                            <li class="menu__item"><a href="">Đồ dùng văn phòng</a></li>
+                            <li class="menu__item"><a href="">Đèn</a></li>
+                            <li class="menu__item"><a href="">Xem thêm ...</a></li>
+                        </ul>
+                    </div>
+                    <div class="grid__column-3">
+                        <ul class="nav__list">
+                            <li class="nav__item nav__item--active">
+                                <a  href="./index.html">Trang chủ</a>
+                            </li>
+                            <li class="nav__item "><a href="./introduce.html">Giới thiệu</a> </li>
+                            <li class="nav__item ">
+                                <a href="./products.html">
+                                    Sản phẩm
+                                    <i class="fa-solid fa-angle-down"></i>
+                                </a>
+                            </li>
+                            <li class="nav__item"><a href="./new__products.html">Hàng mới về</a></li>
+                            <li class="nav__item"><a href="./news.html">Tin tức</a></li>
+                            <li class="nav__item"><a href="./contact.html">Liên hệ</a></li>
+                        </ul>
+                        <a href="">
+                            <img src="../assets/img/slider_1.webp" alt="" class="nav__img">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal hide">
+            <div class="modal-inner">
+                <div class="modal-header">
+                    <img src="../assets/img/logo.webp" alt="">
+                    <i class="fa-solid fa-arrow-left"></i>
+                </div>
+                <div class="modal-content">
+                    <a href="./login.html">Đăng nhập</a>
+                    <a href="./register.html">Đăng ký</a>
+                </div>
+                <div class="menu__main">
+                    <i class="fa-solid fa-bars"></i>
+                    <span>Tất cả sản phẩm</span>
+                    <i class="fa-solid fa-angle-down"></i>
+                </div>
+                <ul class="menu__list">
+                    <li class="menu__item"><a href="">Nội thất gỗ</a></li>
+                    <li class="menu__item"><a href="">Sofa, Ghế thư giãn & Nệm</a></li>
+                    <li class="menu__item"><a href="">Đồ trang trí</a></li>
+                    <li class="menu__item"><a href="">Đồ dùng vải</a></li>
+                    <li class="menu__item"><a href="">Vật dụng bàn ăn</a></li>
+                    <li class="menu__item"><a href="">Đồ dùng văn phòng</a></li>
+                    <li class="menu__item"><a href="">Đèn</a></li>
+                    <li class="menu__item"><a href="">Xem thêm ...</a></li>
+                </ul>
+                <ul class="nav__list">
+                    <li class="nav__item nav__item--active">
+                        <a  href="./index.html">Trang chủ</a>
+                    </li>
+                    <li class="nav__item "><a href="./introduce.html">Giới thiệu</a> </li>
+                    <li class="nav__item ">
+                        <a href="./products.html">
+                            Sản phẩm
+                            <i class="fa-solid fa-angle-down"></i>
+                        </a>
+                    </li>
+                    <li class="nav__item"><a href="./new__products.html">Hàng mới về</a></li>
+                    <li class="nav__item"><a href="./news.html">Tin tức</a></li>
+                    <li class="nav__item"><a href="./contact.html">Liên hệ</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="container">
+            <div class="grid wide">
+                <h2 class="container__first ">Sản phẩm mới về</h2>
+                <ul class="container__list hide-on-mobile">
+                    <li class="container__item"><a href="">Nội thất gỗ</a></li>
+                    <li class="container__item"><a href="">Sofa, ghế thư giãn & nệm</a></li>
+                    <li class="container__item"><a href="">Đồ trang trí</a></li>
+                    <li class="container__item"><a href="">Đồ dùng vải</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="products">
+            <div class="grid wide">
+                <div class="row">
+                    <div class="col l-3 m-4 c-6">
+                        <a class="product__item"  href="./product__detail.html">
+                            <img src="../assets/img/kệ gỗ.jfif" alt="" class="product__img">
+                            <h4 class="product__name">Kệ giá sách cho bé, kệ gỗ đa năng để sách cho bé theo Montessori
+                                của MINDESIGN,trang trí phòng học,gỗ Thông tự nhiên!</h4>
+                            <div class="product__price">
+                                <span class="product__price-old">659.000đ</span>
+                                <span class="product__price-current">625.000đ</span>
+                            </div>
+                            <div class="product__action">
+                                <span class="product__action__like product__action__like--liked">
+                                    <i class="product__action__like-icon-empty fa-regular fa-heart"></i>
+                                    <i class="product__action__like-icon-fill fa-solid fa-heart"></i>
+                                </span>
+                                <div class="product__rating">
+                                    <i class="product__rating__star--gold fa-solid fa-star"></i>
+                                    <i class="product__rating__star--gold fa-solid fa-star"></i>
+                                    <i class="product__rating__star--gold fa-solid fa-star"></i>
+                                    <i class="product__rating__star--gold fa-solid fa-star"></i>
+                                    <i class="product__rating__star--gold fa-solid fa-star"></i>
+                                </div>
+                                <span class="product__sold">Đã bán 522</span>
+                            </div>
+                            <div class="product__origin">
+                                <span class="product__origin__brand">MINDESIGN</span>
+                                <span class="product__origin__origin-name">Hà Nội</span>
+                            </div>
+                            <div class="product__favourite">
+                                <i class="fa-solid fa-check"></i>
+                                Yêu thích
+                            </div>
+                            <div class="product__sale-off">
+                                <span class="product__sale-off-percent">5%</span>
+                                <span class="product__sale-off-label">GIẢM</span>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col l-3 m-4 c-6">
+                        <a class="product__item" href="./product__detail.html">
+                            <img src="../assets/img/img1.webp" alt="" class="product__img">
+                            <h4 class="product__name">Tủ bếp bằng gỗ tự nhiên nhỏ gọn đa năng tiện lợi</h4>
+                            <div class="product__price">
+                                <span class="product__price-old">12.500.000đ</span>
+                                <span class="product__price-current">10.000.000đ</span>
+                            </div>
+                            <div class="product__action">
+                                <span class="product__action__like product__action__like--liked">
+                                    <i class="product__action__like-icon-empty fa-regular fa-heart"></i>
+                                    <i class="product__action__like-icon-fill fa-solid fa-heart"></i>
+                                </span>
+                                <div class="product__rating">
+                                    <i class="product__rating__star--gold fa-solid fa-star"></i>
+                                    <i class="product__rating__star--gold fa-solid fa-star"></i>
+                                    <i class="product__rating__star--gold fa-solid fa-star"></i>
+                                    <i class="product__rating__star--gold fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                </div>
+                                <span class="product__sold">Đã bán 2,3k</span>
+                            </div>
+                            <div class="product__origin">
+                                <span class="product__origin__brand">Evo Nội thất</span>
+                                <span class="product__origin__origin-name">Hà Nội</span>
+                            </div>
+                            <div class="product__favourite">
+                                <i class="fa-solid fa-check"></i>
+                                Yêu thích
+                            </div>
+                            <div class="product__sale-off">
+                                <span class="product__sale-off-percent">20%</span>
+                                <span class="product__sale-off-label">GIẢM</span>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col l-3 m-4 c-6">
+                        <a class="product__item" href="./product__detail.html"id="3">
+                            <img src="../assets/img/kệ để giày.jfif" alt="" class="product__img">
+                            <h4 class="product__name">Kệ để giày dép,Kệ gỗ 5 tầng sang trọng.mẫu mới 2022</h4>
+                            <div class="product__price">
+                                <span class="product__price-old">169.000đ</span>
+                                <span class="product__price-current">125.000đ</span>
+                            </div>
+                            <div class="product__action">
+                                <span class="product__action__like product__action__like--liked">
+                                    <i class="product__action__like-icon-empty fa-regular fa-heart"></i>
+                                    <i class="product__action__like-icon-fill fa-solid fa-heart"></i>
+                                </span>
+                                <div class="product__rating">
+                                    <i class="product__rating__star--gold fa-solid fa-star"></i>
+                                    <i class="product__rating__star--gold fa-solid fa-star"></i>
+                                    <i class="product__rating__star--gold fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                </div>
+                                <span class="product__sold">Đã bán 132</span>
+                            </div>
+                            <div class="product__origin">
+                                <span class="product__origin__brand">Kệ gỗ</span>
+                                <span class="product__origin__origin-name">Hà Nội</span>
+                            </div>
+                            <div class="product__favourite">
+                                <i class="fa-solid fa-check"></i>
+                                Yêu thích
+                            </div>
+                            <div class="product__sale-off">
+                                <span class="product__sale-off-percent">25%</span>
+                                <span class="product__sale-off-label">GIẢM</span>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col l-3 m-4 c-6">
+                        <a class="product__item" href="./product__detail.html"id="4">
+                            <img src="../assets/img/Kệ sách.jfif" alt="" class="product__img">
+                            <h4 class="product__name">Kệ sách Gỗ treo tường hiện đại đa năng chính hãng IGA phòng sách-
+                                GP14</h4>
+                            <div class="product__price">
+                                <span class="product__price-old">328.000đ</span>
+                                <span class="product__price-current">291.000đ</span>
+                            </div>
+                            <div class="product__action">
+                                <span class="product__action__like product__action__like--liked">
+                                    <i class="product__action__like-icon-empty fa-regular fa-heart"></i>
+                                    <i class="product__action__like-icon-fill fa-solid fa-heart"></i>
+                                </span>
+                                <div class="product__rating">
+                                    <i class="product__rating__star--gold fa-solid fa-star"></i>
+                                    <i class="product__rating__star--gold fa-solid fa-star"></i>
+                                    <i class="product__rating__star--gold fa-solid fa-star"></i>
+                                    <i class="product__rating__star--gold fa-solid fa-star"></i>
+                                    <i class="product__rating__star--gold fa-solid fa-star"></i>
+                                </div>
+                                <span class="product__sold">Đã bán 572</span>
+                            </div>
+                            <div class="product__origin">
+                                <span class="product__origin__brand">IGA</span>
+                                <span class="product__origin__origin-name">TP HCM</span>
+                            </div>
+                            <div class="product__favourite">
+                                <i class="fa-solid fa-check"></i>
+                                Yêu thích
+                            </div>
+                            <div class="product__sale-off">
+                                <span class="product__sale-off-percent">11%</span>
+                                <span class="product__sale-off-label">GIẢM</span>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col l-3 m-4 c-6">
+                        <a class="product__item" href="./product__detail.html"id="5">
+                            <img src="https://down-vn.img.susercontent.com/file/af69b1b2a2a590ad703bde8cdbe72674" alt="" class="product__img">
+                            <h4 class="product__name">Rèm cửa vải polyester dày dặn trơn không thấm nước nước màu xám đậm cho phòng tắm</h4>
+                            <div class="product__price">
+                                <span class="product__price-old">407.000đ</span>
+                                <span class="product__price-current">252.000đ</span>
+                            </div>
+                            <div class="product__action">
+                                <span class="product__action__like product__action__like--liked">
+                                    <i class="product__action__like-icon-empty fa-regular fa-heart"></i>
+                                    <i class="product__action__like-icon-fill fa-solid fa-heart"></i>
+                                </span>
+                                <div class="product__rating">
+                                    <i class="product__rating__star--gold fa-solid fa-star"></i>
+                                    <i class="product__rating__star--gold fa-solid fa-star"></i>
+                                    <i class="product__rating__star--gold fa-solid fa-star"></i>
+                                    <i class="product__rating__star--gold fa-solid fa-star"></i>
+                                    <i class="product__rating__star--gold fa-solid fa-star"></i>
+                                </div>
+                                <span class="product__sold">Đã bán 366</span>
+                            </div>
+                            <div class="product__origin">
+                                <span class="product__origin__brand">Evo Nội thất</span>
+                                <span class="product__origin__origin-name">Nước ngoài</span>
+                            </div>
+                            <div class="product__sale-off">
+                                <span class="product__sale-off-percent">38%</span>
+                                <span class="product__sale-off-label">GIẢM</span>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col l-3 m-4 c-6">
+                        <a class="product__item" href="./product__detail.html"id="6">
+                            <img src="https://down-vn.img.susercontent.com/file/8ae9bd4a8ddb06b99837c090f63025c3" alt="" class="product__img">
+                            <h4 class="product__name">Khay gỗ vuông cao cấp lòng cong 16x16cm - đĩa gỗ đựng thực phẩm và vật dụng</h4>
+                            <div class="product__price">
+                                <span class="product__price-old"></span>
+                                <span class="product__price-current">95.000đ</span>
+                            </div>
+                            <div class="product__action">
+                                <span class="product__action__like product__action__like--liked">
+                                    <i class="product__action__like-icon-empty fa-regular fa-heart"></i>
+                                    <i class="product__action__like-icon-fill fa-solid fa-heart"></i>
+                                </span>
+                                <div class="product__rating">
+                                    <i class="product__rating__star--gold fa-solid fa-star"></i>
+                                    <i class="product__rating__star--gold fa-solid fa-star"></i>
+                                    <i class="product__rating__star--gold fa-solid fa-star"></i>
+                                    <i class="product__rating__star--gold fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                </div>
+                                <span class="product__sold">Đã bán 47</span>
+                            </div>
+                            <div class="product__origin">
+                                <span class="product__origin__brand">Khay gỗ</span>
+                                <span class="product__origin__origin-name">Cần Thơ</span>
+                            </div>
+                            <div class="product__favourite">
+                                <i class="fa-solid fa-check"></i>
+                                Yêu thích
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col l-3 m-4 c-6">
+                        <a class="product__item" href="./product__detail.html"id="7">
+                            <img src="https://down-vn.img.susercontent.com/file/581060098a715eac52c8c22b7f62b272" alt="" class="product__img">
+                            <h4 class="product__name">Dây đèn led Cherry Ball 40 bóng dùng pin Aa và usb giá sỉ</h4>
+                            <div class="product__price">
+                                <span class="product__price-old">60.000đ</span>
+                                <span class="product__price-current">45.000đ</span>
+                            </div>
+                            <div class="product__action">
+                                <span class="product__action__like product__action__like--liked">
+                                    <i class="product__action__like-icon-empty fa-regular fa-heart"></i>
+                                    <i class="product__action__like-icon-fill fa-solid fa-heart"></i>
+                                </span>
+                                <div class="product__rating">
+                                    <i class="product__rating__star--gold fa-solid fa-star"></i>
+                                    <i class="product__rating__star--gold fa-solid fa-star"></i>
+                                    <i class="product__rating__star--gold fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                </div>
+                                <span class="product__sold">Đã bán 15,4k</span>
+                            </div>
+                            <div class="product__origin">
+                                <span class="product__origin__brand">Đèn led</span>
+                                <span class="product__origin__origin-name">Hà Nội</span>
+                            </div>
+                            <div class="product__favourite">
+                                <i class="fa-solid fa-check"></i>
+                                Yêu thích
+                            </div>
+                            <div class="product__sale-off">
+                                <span class="product__sale-off-percent">25%</span>
+                                <span class="product__sale-off-label">GIẢM</span>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col l-3 m-4 c-6">
+                        <a class="product__item" href="./product__detail.html"id="8">
+                            <img src="https://down-vn.img.susercontent.com/file/7e07a56418842078a7d0538a9acd2039" alt="" class="product__img">
+                            <h4 class="product__name">Đồ Đựng Tài Liệu Cỡ A4 20 / 40 / 80 / 100 Ngăn Tiện Dụng</h4>
+                            <div class="product__price">
+                                <span class="product__price-old">185.000đ</span>
+                                <span class="product__price-current">132.000đ</span>
+                            </div>
+                            <div class="product__action">
+                                <span class="product__action__like product__action__like--liked">
+                                    <i class="product__action__like-icon-empty fa-regular fa-heart"></i>
+                                    <i class="product__action__like-icon-fill fa-solid fa-heart"></i>
+                                </span>
+                                <div class="product__rating">
+                                    <i class="product__rating__star--gold fa-solid fa-star"></i>
+                                    <i class="product__rating__star--gold fa-solid fa-star"></i>
+                                    <i class="product__rating__star--gold fa-solid fa-star"></i>
+                                    <i class="product__rating__star--gold fa-solid fa-star"></i>
+                                    <i class="product__rating__star--gold fa-solid fa-star"></i>
+                                </div>
+                                <span class="product__sold">Đã bán 591</span>
+                            </div>
+                            <div class="product__origin">
+                                <span class="product__origin__brand">IGA</span>
+                                <span class="product__origin__origin-name">TP HCM</span>
+                            </div>
+                            <div class="product__sale-off">
+                                <span class="product__sale-off-percent">37%</span>
+                                <span class="product__sale-off-label">GIẢM</span>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="product__bottom">
+            <div class="grid wide">
+                <div class="row">
+                    <div class="col l-4 m-12 c-12">
+                        <h2 class="container__bottom">NỔI BẬT</h2>
+                        <a href="#" class="product__outstanding">
+                            <div>
+                                <img src="../assets/img/kệ gỗ.jfif" alt="" class="product__outstanding-img">
+                            </div>
+                            <div>
+                                <h2 class="product__outstanding-brand">MINDESIGN</h2>
+                                <p class="product__outstanding-introduce">
+                                    Kệ giá sách cho bé, kệ gỗ đa năng để sách cho bé theo Montessori
+                                    của MINDESIGN,trang trí phòng học,gỗ Thông tự nhiên!
+                                </p>
+                                <div class="product__price">
+                                    <span class="product__price-old">659.000đ</span>
+                                    <span class="product__price-current">625.000đ</span>
+                                </div>
+                            </div>
+                            <div class="product__favourite">
+                                <i class="fa-solid fa-check"></i>
+                                Yêu thích
+                            </div>
+                            <div class="product__sale-off">
+                                <span class="product__sale-off-percent">5%</span>
+                                <span class="product__sale-off-label">GIẢM</span>
+                            </div>
+                        </a>
+                        <a href="#" class="product__outstanding">
+                            <div>
+                                <img src="../assets/img/img1.webp" alt="" class="product__outstanding-img">
+                            </div>
+                            <div>
+                                <h2 class="product__outstanding-brand">Evo Nội thất</h2>
+                                <p class="product__outstanding-introduce">
+                                    Tủ bếp bằng gỗ tự nhiên nhỏ gọn đa năng tiện lợi
+                                </p>
+                                <div class="product__price">
+                                    <span class="product__price-old">12.500.000đ</span>
+                                    <span class="product__price-current">10.000.000đ</span>
+                                </div>
+                            </div>
+                            <div class="product__favourite">
+                                <i class="fa-solid fa-check"></i>
+                                Yêu thích
+                            </div>
+                            <div class="product__sale-off">
+                                <span class="product__sale-off-percent">20%</span>
+                                <span class="product__sale-off-label">GIẢM</span>
+                            </div>
+                        </a>
+                        <a href="#" class="product__outstanding">
+                            <div>
+                                <img src="../assets/img/kệ để giày.jfif" alt="" class="product__outstanding-img">
+                            </div>
+                            <div>
+                                <h2 class="product__outstanding-brand">Kệ gỗ</h2>
+                                <p class="product__outstanding-introduce">
+                                    Kệ để giày dép,Kệ gỗ 5 tầng sang trọng.mẫu mới 2022
+                                </p>
+                                <div class="product__price">
+                                    <span class="product__price-old">169.000đ</span>
+                                    <span class="product__price-current">125.000đ</span>
+                                </div>
+                            </div>
+                            <div class="product__favourite">
+                                <i class="fa-solid fa-check"></i>
+                                Yêu thích
+                            </div>
+                            <div class="product__sale-off">
+                                <span class="product__sale-off-percent">25%</span>
+                                <span class="product__sale-off-label">GIẢM</span>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col l-4 m-12 c-12">
+                        <h2 class="container__bottom">BÁN CHẠY</h2>
+                        <a href="#" class="product__outstanding">
+                            <div>
+                                <img src="https://down-vn.img.susercontent.com/file/7e07a56418842078a7d0538a9acd2039" alt="" class="product__outstanding-img">
+                            </div>
+                            <div>
+                                <h2 class="product__outstanding-brand">IGA</h2>
+                                <p class="product__outstanding-introduce">
+                                    Đồ Đựng Tài Liệu Cỡ A4 20 / 40 / 80 / 100 Ngăn Tiện Dụng
+                                </p>
+                                <div class="product__price">
+                                    <span class="product__price-old">185.000đ</span>
+                                    <span class="product__price-current">132.000đ</span>
+                                </div>
+                            </div>
+                            <div class="product__sale-off">
+                                <span class="product__sale-off-percent">37%</span>
+                                <span class="product__sale-off-label">GIẢM</span>
+                            </div>
+                        </a>
+                        <a href="#" class="product__outstanding">
+                            <div>
+                                <img src="https://down-vn.img.susercontent.com/file/581060098a715eac52c8c22b7f62b272" alt="" class="product__outstanding-img">
+                            </div>
+                            <div>
+                                <h2 class="product__outstanding-brand">Evo Nội thất</h2>
+                                <p class="product__outstanding-introduce">
+                                    Dây đèn led Cherry Ball 40 bóng dùng pin Aa và usb giá sỉ
+                                </p>
+                                <div class="product__price">
+                                    <span class="product__price-old">60.000đ</span>
+                                    <span class="product__price-current">45.000đ</span>
+                                </div>
+                            </div>
+                            <div class="product__favourite">
+                                <i class="fa-solid fa-check"></i>
+                                Yêu thích
+                            </div>
+                            <div class="product__sale-off">
+                                <span class="product__sale-off-percent">25%</span>
+                                <span class="product__sale-off-label">GIẢM</span>
+                            </div>
+                        </a>
+                        <a href="#" class="product__outstanding">
+                            <div>
+                                <img src="https://down-vn.img.susercontent.com/file/8ae9bd4a8ddb06b99837c090f63025c3" alt="" class="product__outstanding-img">
+                            </div>
+                            <div>
+                                <h2 class="product__outstanding-brand">Khay gỗ</h2>
+                                <p class="product__outstanding-introduce">
+                                    Khay gỗ vuông cao cấp lòng cong 16x16cm - đĩa gỗ đựng thực phẩm và vật dụng
+                                </p>
+                                <div class="product__price">
+                                    <span class="product__price-old"></span>
+                                    <span class="product__price-current">95.000đ</span>
+                                </div>
+                            </div>
+                            <div class="product__favourite">
+                                <i class="fa-solid fa-check"></i>
+                                Yêu thích
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col l-4 m-12 c-12">
+                        <h2 class="container__bottom">Khuyến mãi</h2>
+                        <a href="#" class="product__outstanding">
+                            <div>
+                                <img src="https://down-vn.img.susercontent.com/file/af69b1b2a2a590ad703bde8cdbe72674" alt="" class="product__outstanding-img">
+                            </div>
+                            <div>
+                                <h2 class="product__outstanding-brand">IGA</h2>
+                                <p class="product__outstanding-introduce">
+                                    Rèm cửa vải polyester dày dặn trơn không thấm nước nước màu xám đậm cho phòng tắm
+                                </p>
+                                <div class="product__price">
+                                    <span class="product__price-old">407.000đ</span>
+                                    <span class="product__price-current">252.000đ</span>
+                                </div>
+                            </div>
+                            <div class="product__sale-off">
+                                <span class="product__sale-off-percent">38%</span>
+                                <span class="product__sale-off-label">GIẢM</span>
+                            </div>
+                        </a>
+                        <a href="#" class="product__outstanding">
+                            <div>
+                                <img src="../assets/img/Kệ sách.jfif" alt="" class="product__outstanding-img">
+                            </div>
+                            <div>
+                                <h2 class="product__outstanding-brand">Evo Nội thất</h2>
+                                <p class="product__outstanding-introduce">
+                                    Kệ sách Gỗ treo tường hiện đại đa năng chính hãng IGA phòng sách-
+                                GP14
+                                </p>
+                                <div class="product__price">
+                                    <span class="product__price-old">328.000đ</span>
+                                    <span class="product__price-current">291.000đ</span>
+                                </div>
+                            </div>
+                            <div class="product__favourite">
+                                <i class="fa-solid fa-check"></i>
+                                Yêu thích
+                            </div>
+                            <div class="product__sale-off">
+                                <span class="product__sale-off-percent">11%</span>
+                                <span class="product__sale-off-label">GIẢM</span>
+                            </div>
+                        </a>
+                        <a href="#" class="product__outstanding">
+                            <div>
+                                <img src="https://down-vn.img.susercontent.com/file/581060098a715eac52c8c22b7f62b272" alt="" class="product__outstanding-img">
+                            </div>
+                            <div>
+                                <h2 class="product__outstanding-brand">Đèn led</h2>
+                                <p class="product__outstanding-introduce">
+                                    Kệ để giày dép,Kệ gỗ 5 tầng sang trọng.mẫu mới 2022
+                                </p>
+                                <div class="product__price">
+                                    <span class="product__price-old">169.000đ</span>
+                                    <span class="product__price-current">125.000đ</span>
+                                </div>
+                            </div>
+                            <div class="product__favourite">
+                                <i class="fa-solid fa-check"></i>
+                                Yêu thích
+                            </div>
+                            <div class="product__sale-off">
+                                <span class="product__sale-off-percent">25%</span>
+                                <span class="product__sale-off-label">GIẢM</span>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="section__brands">
+            <div class="grid wide">
+                <div class="row">
+                    <a href="" class="col l-2 m-0 c-0"><img src="../assets/img/brand1.webp" alt=""></a>
+                    <a href="" class="col l-2 m-0 c-0"><img src="../assets/img/brand2.webp" alt=""></a>
+                    <a href="" class="col l-2 m-0 c-0"><img src="../assets/img/partner_3.webp" alt=""></a>
+                    <a href="" class="col l-2 m-0 c-0"><img src="../assets/img/partner_4.webp" alt=""></a>
+                    <a href="" class="col l-2 m-0 c-0"><img src="../assets/img/partner_5.webp" alt=""></a>
+                    <a href="" class="col l-2 m-0 c-0"><img src="../assets/img/partner_6.webp" alt=""></a>
+                </div>
+            </div>
+            
+        </div>
+        <div class="footer">
+            <div class="grid wide">
+                <div class="row">
+                    <div class="col l-3 m-6 c-12">
+                        <h3 class="footer__heading">Về chúng tôi</h3>
+                        <ul class="footer__list">
+                            <li class="footer__item"><a href="./index.html">Trang chủ</a></li>
+                            <li class="footer__item"><a href="./introduce.html">Giới thiệu</a></li>
+                            <li class="footer__item"><a href="./products.html">Sản phẩm</a></li>
+                            <li class="footer__item"><a href="./new__products.html">Hàng mới về</a></li>
+                            <li class="footer__item"><a href="./news.html">Tin tức</a></li>
+                            <li class="footer__item"><a href="./contact.html">Liên hệ</a></li>
+                        </ul>
+                    </div>
+                    <div class="col l-3 m-6 c-12">
+                        <h3 class="footer__heading">Hỗ trợ khách hàng</h3>
+                        <ul class="footer__list">
+                            <li class="footer__item"><a href="./index.html">Trang chủ</a></li>
+                            <li class="footer__item"><a href="./introduce.html">Giới thiệu</a></li>
+                            <li class="footer__item"><a href="./products.html">Sản phẩm</a></li>
+                            <li class="footer__item"><a href="./new__products.html">Hàng mới về</a></li>
+                            <li class="footer__item"><a href="./news.html">Tin tức</a></li>
+                            <li class="footer__item"><a href="./contact.html">Liên hệ</a></li>
+                        </ul>
+                    </div>
+                    <div class="col l-3 m-6 c-12">
+                        <h3 class="footer__heading">Liên hệ với chúng tôi</h3>
+                        <ul class="footer__list">
+                            <li class="footer__item">
+                                <div class="footer__item__heading">Địa chỉ</div>
+                                <div class="footer__item__text"> 70 Lu Gia, Ward 15, District 11, Ho Chi Minh City</div>
+                            </li>
+                            <li class="footer__item">
+                                <div class="footer__item__heading"> Hotline</div>
+                                <div class="footer__item__text"><a href="tel:1900 6750"> 1900 6750</a></div>
+                            </li>
+                            <li class="footer__item">
+                                <div class="footer__item__heading"> Email</div>
+                                <div class="footer__item__text"><a href="mailto:support@sapo.vn"> support@sapo.vn</a></div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col l-3 m-6 c-12">
+                        <h3 class="footer__heading">Đăng ký nhận bảng tin</h3>
+                        <form action="" class="footer__form">
+                            <input type="email" placeholder="Email của bạn">
+                            <i class="fa-regular fa-paper-plane"></i>
+                        </form>
+                        <div class="footer__item__text">Bạn là khách hàng mới. Đăng ký email và nhận mã giảm giá 50.000
+                            đ.</div>
+                        <div class="footer__img">
+                            <img src="../assets/img/payment-1.svg" alt="">
+                            <img src="../assets/img/payment-2.svg" alt="">
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <div class="footer__bottom">
+                <div class="grid wide">
+                    <p class="footer__text">© 2015 - Bản quyền thuộc về Evo Themes | Cung cấp bởi Sapo</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="../assets/js/script.js"></script>
+</body>
+
+</html>
